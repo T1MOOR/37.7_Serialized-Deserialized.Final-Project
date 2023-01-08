@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_7_7_Module_Serialized_Deserialized_Final_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="XG6-3d-a1S">
+                                <rect key="frame" x="0.0" y="109" width="393" height="709"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ArticleCell" rowHeight="110" id="7gp-Xw-iQX" customClass="ArticleCell" customModule="_7_7_Module_Serialized_Deserialized_Final_Project" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="110"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7gp-Xw-iQX" id="oLW-wd-R6c">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="110"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G4n-nK-M72">
+                                                    <rect key="frame" x="10" y="10" width="120" height="90"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="90" id="hqT-Gi-1kY"/>
+                                                        <constraint firstAttribute="width" constant="120" id="pwZ-Wh-iLx"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p0b-hM-ZfN">
+                                                    <rect key="frame" x="140" y="11" width="223" height="45"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="45" id="wpL-5B-9oF"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="14"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YD2-FC-RJA">
+                                                    <rect key="frame" x="140" y="61" width="223" height="45"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="45" id="TKL-WW-4kX"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="10"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="G4n-nK-M72" secondAttribute="bottom" constant="10" id="NVt-0W-aVP"/>
+                                                <constraint firstItem="p0b-hM-ZfN" firstAttribute="leading" secondItem="G4n-nK-M72" secondAttribute="trailing" constant="10" id="P1S-Mg-dMo"/>
+                                                <constraint firstItem="G4n-nK-M72" firstAttribute="top" secondItem="oLW-wd-R6c" secondAttribute="top" constant="10" id="XQk-VV-HRZ"/>
+                                                <constraint firstItem="YD2-FC-RJA" firstAttribute="top" secondItem="p0b-hM-ZfN" secondAttribute="bottom" constant="5" id="d43-9l-W9e"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="YD2-FC-RJA" secondAttribute="trailing" constant="10" id="eP2-6a-4wF"/>
+                                                <constraint firstItem="p0b-hM-ZfN" firstAttribute="top" secondItem="oLW-wd-R6c" secondAttribute="topMargin" id="jXi-wJ-YWE"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="p0b-hM-ZfN" secondAttribute="trailing" constant="10" id="p0F-Jf-ymE"/>
+                                                <constraint firstItem="YD2-FC-RJA" firstAttribute="leading" secondItem="G4n-nK-M72" secondAttribute="trailing" constant="10" id="wWA-We-m2E"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="YD2-FC-RJA" secondAttribute="bottom" id="wkv-oC-Azx"/>
+                                                <constraint firstItem="G4n-nK-M72" firstAttribute="leading" secondItem="oLW-wd-R6c" secondAttribute="leading" constant="10" id="ySb-yb-hHL"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="cellImage" destination="G4n-nK-M72" id="0m8-BE-xhF"/>
+                                            <outlet property="cellLabel" destination="p0b-hM-ZfN" id="tTL-B6-OG8"/>
+                                            <outlet property="cellLabelDescription" destination="YD2-FC-RJA" id="HUZ-gY-smi"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BREAKING NEWS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDU-ff-Wj4">
+                                <rect key="frame" x="10" y="69" width="373" height="20"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XG6-3d-a1S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CCB-QD-dPv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KDU-ff-Wj4" secondAttribute="trailing" constant="10" id="K73-74-50X"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XG6-3d-a1S" secondAttribute="trailing" id="Spa-wK-3CH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XG6-3d-a1S" secondAttribute="bottom" id="WvM-Qx-xSv"/>
+                            <constraint firstItem="KDU-ff-Wj4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="dRk-zo-Lb9"/>
+                            <constraint firstItem="KDU-ff-Wj4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="jvI-kZ-Kst"/>
+                            <constraint firstItem="XG6-3d-a1S" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="pJb-1G-jPu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="XG6-3d-a1S" id="P5v-Xb-sqG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20.610687022900763" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+</document>
